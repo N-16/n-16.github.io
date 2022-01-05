@@ -1,0 +1,64 @@
+:root{
+    --red: #F24236;
+    --lightBlue: #AEECEF;
+    --white: #FFE3DC;
+    --pink: #FF5D73;
+    --black: #333333;
+    --blackTranslucent: #33333332;
+
+}
+
+html, body{
+	padding: 0px;
+	margin: 0px;
+	scroll-behavior: smooth;
+}
+
+
+.nav{
+    background-color: var(--red);
+    margin: 0px;
+    padding: 0px;
+}
+.back-button{
+    margin-left: 1%;
+    display:inline-block;
+    padding: 15px;;
+}
+.title{
+    margin: 2em 2em 2% 2%;
+}
+.roles{
+    margin-left: 1em;
+}
+
+a{
+	text-decoration: none;
+}
+
+.back-button:hover{
+    background-color: var(--blackTranslucent);
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+	color: var(--black);
+	font-family: 'Orbitron', sans-serif;
+	font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+p{
+    color: var(--black);
+	font-family: 'Ubuntu Mono', monospace;
+	font-weight: 400;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+
+h1 { font-size: 56px;}
+h2 { font-size: 36px;}
+h3 { font-size: 28px;}
+h4 { font-size: 24px;}
+h5 { font-size: 20px;}
+h6 { font-size: 16px;}
