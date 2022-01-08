@@ -14,6 +14,25 @@ html, body{
 	scroll-behavior: smooth;
 }
 
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+thead th:nth-child(1) {
+    width: 20%;
+}
+  
+  thead th:nth-child(2) {
+    width: 35%;
+}
+  
+  thead th:nth-child(3) {
+    width: 45%;
+}
+th, td {
+    padding: 20px;
+}
+
 
 .nav{
     background-color: var(--red);
@@ -47,10 +66,13 @@ html, body{
 }
 
 .one-liner{
-    grid-area: description;
+    
     border: dashed;
 }
 .features{
+    
+}
+.description{
     grid-area: description;
 }
 .screenshots{
@@ -94,3 +116,14 @@ h3 { font-size: 28px;}
 h4 { font-size: 24px;}
 h5 { font-size: 20px;}
 h6 { font-size: 16px;}
+th, td{
+    font-family: 'Ubuntu Mono', monospace;
+	font-weight: 400;
+    font-size: 22px;
+    color: var(--black);
+}
+
+th{
+    color: var(--red);
+    font-weight: 500;
+}
