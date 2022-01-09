@@ -17,6 +17,7 @@ html, body{
 table {
     table-layout: fixed;
     width: 100%;
+    border-collapse: collapse;
 }
 thead th:nth-child(1) {
     width: 20%;
@@ -39,13 +40,17 @@ th, td {
     margin: 0px;
     padding: 0px;
 }
+.main-container{
+    width: 1400px;
+    margin: 0 auto;
+}
 .back-button{
     margin-left: 1%;
     display:inline-block;
     padding: 15px;;
 }
 .title{
-    margin: 2em 2em 2% 2%;
+    /*margin: 2em 2em 2% 2%;*/
 }
 .roles{
     margin-left: 0.5em;
@@ -53,21 +58,20 @@ th, td {
 
 .game-content{
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin: 2em 2em 2% 2%;
     grid-template-areas: 
     "gameplay description"
-    "screenshots description"
+    "screenshots description";
+    grid-template-columns: 1fr 1.2fr;
+    grid-gap: 2em;
+    margin-top: 2em;
 }
 .gameplay{
     /*align-self: center;*/
     grid-area: gameplay;
-    border: dashed;
 }
 
 .one-liner{
     
-    border: dashed;
 }
 .features{
     
@@ -78,12 +82,18 @@ th, td {
 .screenshots{
     display: flex;
     flex-flow: column wrap;
-    border:dashed;
     grid-area: screenshots;
+}
+.screenshots img{
     object-fit: cover;
+    max-width: 100%;
+    padding-top: 1em;
 }
 .gifs{
+}
+.gifs img{
     object-fit: cover;
+    max-width: 85%;
 }
 
 a{
@@ -107,7 +117,7 @@ p{
 	font-weight: 400;
     margin: 0;
     padding: 0;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 h1 { font-size: 56px;}
@@ -119,11 +129,55 @@ h6 { font-size: 16px;}
 th, td{
     font-family: 'Ubuntu Mono', monospace;
 	font-weight: 400;
-    font-size: 22px;
+    font-size: 20px;
     color: var(--black);
+}
+td img{
+    max-width: 100%;
+    object-fit: cover;
 }
 
 th{
     color: var(--red);
     font-weight: 500;
+    text-align: left;
+    background-color: var(--black);
 }
+
+thead th:nth-child(1) {
+    width: 20%;
+}
+  
+thead th:nth-child(2) {
+    width: 50%;
+}
+  
+thead th:nth-child(3) {
+    width: 30%;
+}
+tbody tr:nth-child(odd) {
+    background-color: var(--white);
+}
+  
+  tbody tr:nth-child(even) {
+    background-color: var(--lightBlue);
+}
+
+@media screen and (max-width: 1400px){
+	.main-container{
+        width:95%;
+    }
+}
+@media screen and (max-width: 1000px){
+	.game-content{
+    grid-template-areas: 
+    "gameplay"
+    "description"
+    "screenshots";
+    grid-template-columns: 1fr;
+    }
+}
+
+  
+
+  
