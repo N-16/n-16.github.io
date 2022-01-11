@@ -227,8 +227,12 @@ tbody tr:nth-child(odd) {
     background-color: var(--white);
 }
   
-  tbody tr:nth-child(even) {
+tbody tr:nth-child(even) {
     background-color: var(--lightBlue);
+}
+tbody td:nth-child(3){
+    background-color: transparent;
+    padding: 0;
 }
 
 @media screen and (max-width: 1400px){
