@@ -6,7 +6,7 @@
     --pink: #FF5D73;
     --black: #333333;
     --blackTranslucent: #33333332;
-    --redTranslucent: #f2433646;
+    --redTranslucent: #f243368e;
 
 }
 
@@ -14,6 +14,7 @@ html, body{
 	padding: 0px;
 	margin: 0px;
 	scroll-behavior: smooth;
+    background-color: var(--black);
 }
 
 table {
@@ -114,12 +115,24 @@ th, td {
 }
 
 .intro{
-    padding: 250px 0 0 0;
+    padding: 200px 0 200px 0;
+    background-color: var(--red);
+}
+#intro-text{
+    padding: 2em;
+    margin-right: 50%;
+    background-color: var(--pink);
+}
+.projects{
+    padding-top: 4em;
 }
 #portfolio{
+    margin-top: 4em;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-auto-rows: 320px;
+    /*row-gap: 2px;
+    column-gap: 2px;*/
 }
 .project{
     justify-self:center;
@@ -134,8 +147,7 @@ th, td {
 #about-wrapper{
     display: flex;
     flex-flow: column wrap;
-    row-gap: 250px;
-    border:dashed;
+    background-color: var(--lightBlue);
 }
 .project .overlay{
     position: absolute;
@@ -146,16 +158,18 @@ th, td {
     top: 0;
     background-color: var(--redTranslucent);
 }
+.project .overlay h3{
+    margin-top: 4em;
+}
 
 .project:hover .overlay{
     opacity: 1;
 }
-a{
-	text-decoration: none;
-}
-
 .back-button:hover{
     background-color: var(--blackTranslucent);
+}
+a{
+	text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6, strong{
