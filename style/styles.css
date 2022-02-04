@@ -1,12 +1,12 @@
 :root{
-    --red: #F24236;
-    --lightBlue: #AEECEF;
+    --red: #FD1353;
+    --lightBlue: #2de2e6;
     /*--white: #FFE3DC;*/
     --white: #fff;
-    --pink: #FF5D73;
-    --black: #333333;
-    --blackTranslucent: #33333332;
-    --redTranslucent: #f243368e;
+    --pink: #FD3777;
+    --black: #241734;
+    --blackTranslucent: #24173432;
+    --redTranslucent: #FD13538e;
 
 }
 
@@ -120,7 +120,7 @@ th, td {
 }
 #intro-text{
     padding: 2em;
-    margin-right: 50%;
+    width: 700px;
     background-color: var(--pink);
 }
 .projects{
@@ -248,6 +248,15 @@ tbody td:nth-child(3){
     "description"
     "screenshots";
     grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 740px){
+	#intro-text{
+        width: auto;
+    }
+    #portfolio{
+        grid-template-columns: 100%;
+        grid-auto-rows: 320px;
     }
 }
 
