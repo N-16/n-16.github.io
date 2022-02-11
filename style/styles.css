@@ -54,6 +54,7 @@ th, td {
     width: 1400px;
     margin: 0 auto;
     padding: 0 0 0 0;
+    padding-bottom: 4em;
     
 }
 .back-button{
@@ -168,6 +169,20 @@ th, td {
 }
 .back-button:hover{
     background-color: var(--blackTranslucent);
+}
+#other-content{
+    flex-flow: column wrap;
+    margin-top: 2em;
+}
+#other-content h2{
+    color: var(--white);
+}
+#other-content .screenshots{
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+#other-content .screenshots img {
+    max-width: 45%;
 }
 a{
 	text-decoration: none;
