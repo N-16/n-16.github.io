@@ -54,7 +54,6 @@ th, td {
     width: 1400px;
     margin: 0 auto;
     padding: 0 0 0 0;
-    padding-bottom: 4em;
     
 }
 .back-button{
@@ -92,6 +91,7 @@ th, td {
 
 .description{
     grid-area: description;
+    border-style: dotted;
 }
 .screenshots{
     display: flex;
@@ -197,12 +197,16 @@ h1, h2, h3, h4, h5, h6, strong{
 }
 p{
     color: var(--white);
-	font-family: 'Ubuntu Mono', monospace;
+	font-family: 'Roboto Mono', monospace;
 	font-weight: 400;
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 18px;
 }
+.roles p {
+    font-family:'Ubuntu Mono', monospace;
+    font-size: 21px;
+} 
 
 h1 { font-size: 56px;}
 h2 { font-size: 36px;}
@@ -211,9 +215,9 @@ h4 { font-size: 24px;}
 h5 { font-size: 20px;}
 h6 { font-size: 16px;}
 th, td{
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
 	font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     color: var(--black);
 }
 td img{
