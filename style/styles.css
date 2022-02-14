@@ -54,7 +54,7 @@ th, td {
     width: 1400px;
     margin: 0 auto;
     padding: 0 0 0 0;
-    
+    background-color: var(--black);
 }
 .back-button{
     margin-left: 1%;
@@ -112,9 +112,16 @@ th, td {
     object-fit: cover;
     max-width: 85%;
 }
-
+#bg-image{
+    filter: blur(8px);
+    position: absolute;
+    border-style: dashed;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
 #except-nav{
-    background-color: var(--black);
+    /*background-color: var(--black);*/
     top:3em;
     position: relative;
 }
