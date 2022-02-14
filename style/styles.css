@@ -55,6 +55,8 @@ th, td {
     margin: 0 auto;
     padding: 0 0 0 0;
     background-color: var(--black);
+    position:relative;
+    z-index:2;
 }
 .back-button{
     margin-left: 1%;
@@ -113,12 +115,15 @@ th, td {
     max-width: 85%;
 }
 #bg-image{
-    filter: blur(8px);
-    position: absolute;
-    border-style: dashed;
-    height: 100%;
+    background-color: var(--blackTranslucent);
+    background-size:cover;
+    position: absolute;  
     width: 100%;
-    background-size: cover;
+    min-height: 100%;
+    filter:blur(8px);
+    background-blend-mode: multiply;
+    background-attachment:fixed;
+    background-position:center;
 }
 #except-nav{
     /*background-color: var(--black);*/
