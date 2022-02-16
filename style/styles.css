@@ -186,6 +186,9 @@ th, td {
 .back-button:hover{
     background-color: var(--blackTranslucent);
 }
+.description a{
+    color: var(--red);
+}
 #other-content{
     flex-flow: column wrap;
     margin-top: 2em;
