@@ -180,10 +180,16 @@ th, td {
     text-align: center;
     font-size: 60px;
 }
+.link{
+    display:inline-block;
+    padding: 10px;
+    transition: .5s ease;
+
+}
 .project:hover .overlay{
     opacity: 1;
 }
-.back-button:hover{
+.back-button:hover, .link:hover{
     background-color: var(--blackTranslucent);
 }
 .description a{
