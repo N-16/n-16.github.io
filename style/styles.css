@@ -154,6 +154,7 @@ th, td {
 .project{
     justify-self:center;
     position: relative;
+    width: 100%;
 }
 .project img{
     width: 100%;
