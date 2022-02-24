@@ -1,14 +1,35 @@
 :root{
-    --red: #FD1353;
-    --lightBlue: #2de2e6;
-    /*--white: #FFE3DC;*/
-    --white: #fff;
-    --pink: #FD3777;
-    --black: #241734;
-    --blackTranslucent: #24173432;
-    --redTranslucent: #FD13538e;
+    --main: #E84A43;
+    --secondary: #B3E6CE;
+    --secondaryDarker: #a7d3be;
+    --white: #FFFFFF;
+    --pink: #C9EDDC;
+    --black: #2F2E2E;
+    --blackTranslucent: #2F2E2E32;
+    --primaryTranslucent: #E84A438e;
 
 }
+/*:root{
+    --red: #F2E012;
+    --lightBlue: #A5D8FF;
+    --white: #FFFFFF;
+    --pink: #F86624;
+    --black: #121111;
+    --blackTranslucent: #06050732;
+    --redTranslucent: #F2E0128e;
+
+}*/
+/*:root{
+    --main: #81c1cb;
+    --secondary: #ee88af;
+    --secondaryDarker: #ec689b;
+    --white: #FFFFFF;
+    --pink: #ee88af;
+    --black: #312f2e;
+    --blackTranslucent: #3d3a3932;
+    --primaryTranslucent: #81c1cb8e;
+    --secondary2: #fe6c0f;
+}*/
 
 html, body{
 	padding: 0px;
@@ -21,6 +42,8 @@ table {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
+}
+thead{
 }
 thead th:nth-child(1) {
     width: 20%;
@@ -40,7 +63,7 @@ th, td {
 
 
 .nav{
-    background-color: var(--red);
+    background-color: var(--main);
     margin: 0px;
     padding: 0px;
     width: 100%;
@@ -65,7 +88,7 @@ th, td {
     transition: .5s ease;
 }
 .title{
-    background-color: var(--red);
+    background-color: var(--main);
     padding: 1em 0 1em 0;
 }
 .roles{
@@ -133,12 +156,12 @@ th, td {
 
 .intro{
     padding: 200px 0 200px 0;
-    background-color: var(--red);
+    background-color: var(--main);
 }
 #intro-text{
     padding: 2em;
     width: 700px;
-    background-color: var(--pink);
+    background-color: var(--secondary);
 }
 .projects{
     padding-top: 4em;
@@ -165,7 +188,7 @@ th, td {
 #about-wrapper{
     display: flex;
     flex-flow: column wrap;
-    background-color: var(--lightBlue);
+    background-color: var(--secondary);
 }
 .project .overlay{
     position: absolute;
@@ -174,7 +197,7 @@ th, td {
     width: 100%;
     height: 100%;
     top: 0;
-    background-color: var(--redTranslucent);
+    background-color: var(--primaryTranslucent);
 }
 .project .overlay h3{
     margin-top: 1em;
@@ -187,14 +210,16 @@ th, td {
     transition: .5s ease;
 
 }
+
+
 .project:hover .overlay{
     opacity: 1;
 }
 .back-button:hover, .link:hover{
     background-color: var(--blackTranslucent);
 }
-.description a{
-    color: var(--red);
+.description a, #other-content a{
+    color: var(--main);
 }
 #other-content{
     flex-flow: column wrap;
@@ -255,7 +280,7 @@ th{
     color: var(--black);
     font-weight: 500;
     text-align: left;
-    background-color: var(--red);
+    background-color: var(--main);
 }
 
 thead th:nth-child(1) {
@@ -270,11 +295,11 @@ thead th:nth-child(3) {
     width: 30%;
 }
 tbody tr:nth-child(odd) {
-    background-color: var(--pink);
+    background-color: var(--secondaryDarker);
 }
   
 tbody tr:nth-child(even) {
-    background-color: var(--lightBlue);
+    background-color: var(--secondary);
 }
 tbody td:nth-child(3){
     background-color: transparent;
@@ -283,7 +308,7 @@ tbody td:nth-child(3){
 
 @media screen and (max-width: 1400px){
 	.main-container{
-        width:95%;
+        width:100%;
     }
 }
 @media screen and (max-width: 1000px){
