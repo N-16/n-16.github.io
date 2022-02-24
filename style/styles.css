@@ -1,4 +1,4 @@
-:root{
+/*:root{
     --main: #E84A43;
     --secondary: #B3E6CE;
     --secondaryDarker: #a7d3be;
@@ -7,8 +7,9 @@
     --black: #2F2E2E;
     --blackTranslucent: #2F2E2E32;
     --primaryTranslucent: #E84A438e;
+    --secondary2: #fe6c0f;
 
-}
+}*/
 /*:root{
     --red: #F2E012;
     --lightBlue: #A5D8FF;
@@ -19,7 +20,7 @@
     --redTranslucent: #F2E0128e;
 
 }*/
-/*:root{
+:root{
     --main: #81c1cb;
     --secondary: #ee88af;
     --secondaryDarker: #ec689b;
@@ -29,7 +30,7 @@
     --blackTranslucent: #3d3a3932;
     --primaryTranslucent: #81c1cb8e;
     --secondary2: #fe6c0f;
-}*/
+}
 
 html, body{
 	padding: 0px;
@@ -106,7 +107,7 @@ th, td {
     grid-template-columns: 1fr 1.2fr;
     grid-gap: 2em;
     margin-top: 2em;
-    padding: 0 15px 0 15px;
+    padding: 0 15px 1em 15px;
 }
 .gameplay{
     /*align-self: center;*/
@@ -224,6 +225,9 @@ th, td {
 #other-content{
     flex-flow: column wrap;
     margin-top: 2em;
+    padding-bottom: 2em;
+    margin-left:1em;
+    margin-right: 1em;
 }
 #other-content h2{
     color: var(--white);
@@ -234,6 +238,15 @@ th, td {
 }
 #other-content .screenshots img {
     max-width: 45%;
+}
+#footer{
+    height: 100px;
+    background-color: var(--main);
+    border-top:inset;
+    border-width: 2px;
+    border-color: var(--black);
+    text-align: center;
+    position: relative;
 }
 a{
 	text-decoration: none;
@@ -254,9 +267,12 @@ p{
     padding: 0;
     font-size: 18px;
 }
-.roles p {
+.roles p, #footer p {
     font-family:'Ubuntu Mono', monospace;
     font-size: 21px;
+    color: var(--black);
+    z-index: 99;
+
 } 
 
 h1 { font-size: 56px;}
